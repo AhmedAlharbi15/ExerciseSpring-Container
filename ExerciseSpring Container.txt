@@ -1,0 +1,36 @@
+Q1: 
+hey from message1
+
+Q2:
+hey from message1
+hey from message2
+-------------------------
+
+Q3:
+ hey from message1
+hey from message3
+hey from message2
+
+Q4:
+ hey from message1
+hey from Main controller 
+ hey from message3
+ hey from message2
+
+Q5:
+ hey from message3
+ hey from message2
+hey from Main controller
+ hey from message1
+
+
+ج1: استخدم Bean فوق الميثود لاجل طباعة الرسالة الاولى 
+----------------------
+ج2: طبع الاولى لان Qualifier 1 تم وضعه فوق الميثود الاول وماله Qualifier في الداخل سوا return  "1" , طبع الثانية لان Qualifier تم استدعاءها 
+
+--------------------
+ج3: طبع رسالة 3 قبل رسالة 2 لان ميثود الثالث لم يستدعي Qualifier فارغ من الداخل اما ميثود الثاني تم استدعاء Qualifier ووضع يكون بالرقم 3 
+-----------------------
+ج4: طبع ثاني رسالة اللي موجودة في الكلاس قبل الرسالة 3 لان تم تعريف متغير data نفس الاسم في   Main . ة this.data=data وفي داخل الميثود وضع 1 Qualifier وباقي الخطوات تم شرحها 
+-----------------------
+ج5: طبع اول شيء رسالة 3 لانها لم تستدعي Qualifier وتكون له الاولوية و طبع الرسالة الثانية بالرغم Qualifier رقمه 3 الا ان الميثود الرسالة رقم 1 بداخلها استدعاء في كلاس اخر وتكون الاولوية في داخل كلاس Mian 
